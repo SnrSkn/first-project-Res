@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <title>İletişim</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-link" id="nav-link">
+                <li>
+                    <a href="iletisim.html">İletişim</a>
+                </li>
+                <li>
+                    <a href="galeri.html">Galeri</a>
+                </li>
+                <li>
+                    <a href="hakkimizda.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="urunler.html">Ürünler</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="section">
+        <div class="form-map-container">
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50048.548772345544!2d27.1843328!3d38.371328!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b962038ea89c4f%3A0xc9674017d96e26c7!2sDokuz%20Eyl%C3%BCl%20%C3%9Cniversitesi%20%C4%B0ktisadi%20Ve%20%C4%B0dari%20Bilimler%20Fak%C3%BCltesi!5e0!3m2!1str!2str!4v1722512207306!5m2!1str!2str"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form-container">
+                <form class="section-div" method="post" action="" onsubmit="return validationKontrol()">
+                    <label class="form-label" for="isim">İsim</label>
+                    <input type="text" id="isim" name="isim" placeholder="İsminizi giriniz">
+                    <label class="form-label" for="soyisim">Soyisim</label>
+                    <input type="text" id="soyisim" name="soyisim" placeholder="Soyisminizi giriniz">
+                    <label class="form-label" for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="E-Mail adresinizi giriniz">
+                    <label class="form-label" for="telNo">Telefon Numarası</label>
+                    <div class="tel-container">
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                    <br>
+                    <label class="form-label" for="aciklama">Açıklama</label>
+                    <textarea class="textarea" id="aciklama" name="aciklama" placeholder="Açıklama giriniz"></textarea>
+                    <p id="bosAlanKontrol" style="color: red;"></p>
+                    <input type="submit" value="Gönder">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul class="nav-link-footer">
+                    <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+                    <li><a href="galeri.html" target="_blank">Galeri</a></li>
+                    <li><a href="hakkimizda.html" target="_blank">Hakkımızda</a></li>
+                    <li><a href="urunler.html" target="_blank">Ürünler</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="img/facebook-icon.jpg" alt="Facebook"></a>
+                <a href="#"><img src="img/x-icon.jpg" alt="X"></a>
+                <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="img/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="js/telUlke.js"></script>
+    <script src="js/hamburger-menu.js"></script>
+    <script src="js/validationKontrol.js"></script>
+</body>
+
+</html>

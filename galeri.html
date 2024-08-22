@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Galeri</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-link" id="nav-link">
+                <li>
+                    <a href="iletisim.html">İletişim</a>
+                </li>
+                <li>
+                    <a href="galeri.html">Galeri</a>
+                </li>
+                <li>
+                    <a href="hakkimizda.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="urunler.html">Ürünler</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="galeri">
+            <img src="img/a.jpg" alt="Fotoğraf 1" class="galeri-item" onclick="openModal('img/a.jpg')">
+            <img src="img/b.jpg" alt="Fotoğraf 2" class="galeri-item" onclick="openModal('img/b.jpg')">
+            <img src="img/c.jpg" alt="Fotoğraf 3" class="galeri-item" onclick="openModal('img/c.jpg')">
+            <img src="img/d.jpg" alt="Fotoğraf 4" class="galeri-item" onclick="openModal('img/d.jpg')">
+            <img src="img/a.jpg" alt="Fotoğraf 5" class="galeri-item" onclick="openModal('img/a.jpg')">
+        </div>
+
+        <div id="modal" class="modal">
+            <span class="x" onclick="closeModal()">&times;</span>
+            <img id="modal-img" class="modal-content">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul class="nav-link-footer">
+                    <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+                    <li><a href="galeri.html" target="_blank">Galeri</a></li>
+                    <li><a href="hakkimizda.html" target="_blank">Hakkımızda</a></li>
+                    <li><a href="urunler.html" target="_blank">Ürünler</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="img/facebook-icon.jpg" alt="Facebook"></a>
+                <a href="#"><img src="img/x-icon.jpg" alt="X"></a>
+                <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="img/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/galeri-modal.js"></script>
+    <script src="js/hamburger-menu.js"></script>
+</body>
+
+</html>

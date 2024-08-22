@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ana Sayfa</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-link" id="nav-link" id="nav-link">
+                <li>
+                    <a href="iletisim.html">İletişim</a>
+                </li>
+                <li>
+                    <a href="galeri.html">Galeri</a>
+                </li>
+                <li>
+                    <a href="hakkimizda.html">Hakkımızda</a>
+                </li>
+                <li>
+                    <a href="urunler.html">Ürünler</a>
+                </li>
+                <li>
+                    <a data-quantity="0" href="#" class="btn-cart">
+                        <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path transform="translate(-3.62 -0.85)"
+                                d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
+                            </path>
+                        </svg>
+                        <span class="quantity"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <img src="img/b.jpg" style="width:100%; height:500px;">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/c.jpg" style="width:100%; height:500px;">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/d.jpg" style="width:100%; height:500px;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section class="section">
+        <div class="index-urun-container" id="index-urun-container"></div>
+        <div class="slider-container" id="slider-container">
+            <button class="slider-button left" id="oncekiBtn">‹</button>
+            <div class="slider" id="urun-slider"></div>
+            <button class="slider-button right" id="sonrakiBtn">›</button>
+        </div>
+        <div class="sayfalama" id="sayfalama"></div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul class="nav-link-footer">
+                    <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+                    <li><a href="galeri.html" target="_blank">Galeri</a></li>
+                    <li><a href="hakkimizda.html" target="_blank">Hakkımızda</a></li>
+                    <li><a href="urunler.html" target="_blank">Ürünler</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="img/facebook-icon.jpg" alt="Facebook"></a>
+                <a href="#"><img src="img/x-icon.jpg" alt="X"></a>
+                <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="img/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/banner.js"></script>
+    <script src="js/index-urunler.js"></script>
+    <script src="js/hamburger-menu.js"></script>
+    <script src="js/sepet-modal.js"></script>
+</body>
+
+</html>
